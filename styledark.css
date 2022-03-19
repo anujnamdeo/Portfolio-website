@@ -1,0 +1,322 @@
+body {
+    background-color: #151515;
+}
+
+/* Scroll Bar CSS */
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #151515;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #151515;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #151515;
+}
+
+#container {
+    display: flex;
+    /* flex-wrap: wrap; */
+
+}
+
+#leftside {
+    /* background-color: aqua; */
+    position: fixed;
+    /* max-width: fit-content; */
+    padding-left: 6em;
+    margin-top: 2em;
+    width: 500px;
+    max-height: fit-content;
+}
+
+#rightside {
+    position: absolute;
+    /* background-color: greenyellow; */
+    max-width: 50%;
+    margin-left: 50%;
+    margin-top: 3.5em;
+    padding-right: 6em;
+    width: 600px;
+    max-height: fit-content;
+}
+
+
+@media (min-width:300px) and (max-width:500px){
+    #leftside{
+        position: absolute;
+        padding-left: 1.5em;
+        margin-top:-1.5em;
+    }
+
+    #rightside {
+        /* margin-left: 1em; */
+        margin-top: 32em;
+        margin-left: 1.2em;
+    }
+
+    .projects {
+        width: 25em;
+    }
+
+    .icons{
+        width: 25em;
+    }
+}
+
+@media (min-width:700px) and (max-width:900px) {
+    #leftside {
+        position: absolute;
+    }
+
+    #rightside {
+        /* background-color: aqua; */
+        margin-top: 36em;
+        margin-left: 6.5em;
+    }
+
+    .projects {
+        width: 31em;
+    }
+}
+
+
+
+#line1 {
+    font-size: 64px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+#line2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    margin-top: -1.5em;
+    color: #ffffff;
+}
+
+#para {
+    max-width: 400px;
+    color: #afacac;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+#emailatline {
+    padding: 5px 10px;
+    border: 1px solid white;
+    background-color: #151515;
+    max-width: fit-content;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+#emailatline:hover {
+    transition-duration: .2s;
+    background-color: rgb(53, 50, 50);
+    border: 1px solid #151515;
+}
+
+#phoneatline:hover {
+    transition-duration: .2s;
+    background-color: rgb(53, 50, 50);
+    border: 1px solid #151515;
+}
+
+#phoneatline {
+    padding: 5px 10px;
+    border: 1px solid white;
+    background-color: #151515;
+    max-width: fit-content;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-left: 1em;
+}
+
+.head {
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+    color: #777778;
+}
+
+#darkmodeimage {
+    background-color: #151515;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    margin: 1px;
+}
+
+#darkmodeimage:hover {
+    transition-duration: .5s;
+    border: 1px solid #151515;
+    /* background-color: whitesmoke; */
+}
+
+#whatmode{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: white;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#bottomprofile {
+    display: flex;
+}
+
+#profilepic {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.socialicons {
+    height: 30px;
+    width: 30px;
+    margin: .5em;
+}
+
+#linkedin {
+    margin-left: 20px;
+
+}
+
+
+.rightcardsheadings {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    /* background-color: aqua; */
+    border-bottom: 1px solid lightgray;
+    padding: 5px 10px;
+    color: white;
+}
+
+
+.rightcardsproject {
+    margin-top: 0em;
+}
+
+.projects {
+    background-color: #202022;
+    margin: 10px;
+    margin-top: 0.2em;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.projects:hover {
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 29px 0px; */
+    transform: scale(1.12);
+    transition-duration: .4s;
+}
+
+.techstack {
+    margin-top: -.3em;
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.projectname {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    margin-top: -.3em;
+    color: #ffffff;
+
+}
+
+.projectdesc {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin-top: -1.7em;
+    color: #7f7d80;
+}
+
+.projectshare {
+    padding: 5px 10px;
+    background-color: #151515;
+    /* border: 1px solid #151515; */
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid white;
+    color: white;
+}
+
+.projectshare:hover {
+    background-color: white;
+    color: #151515;
+    transition-duration: .3s;
+}
+
+.icons {
+    display: flex;
+    /* background-color: aqua; */
+    /* margin: 10px; */
+    padding: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icon {
+    background-color: #202022;
+    /* border: 1px solid gray; */
+    border-radius: 50%;
+    /* height: 100px;
+    width: 170px; */
+    margin-left: -1.5em;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition-duration: .4s;
+}
+
+.iconslinks {
+    text-decoration: none;
+    color: #151515;
+}
+
+.iconimage {
+    height: 50px;
+    width: 50px;
+    padding: 40px;
+
+}
+
+.icondetails {
+    /* margin-top: 0.2em; */
+    margin-left: 1em;
+}
+
+.iconheading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.iconabout {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin-top: -1.7em;
+    color: #777778;
+}
+
+.icondate {
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+    margin-top: -.3em;
+    color: #ffffff;
+}

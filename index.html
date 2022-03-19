@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Anuj Namdeo</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="shortcut icon" href="images/anuj5-modified.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+  <style>
+
+  </style>
+
+
+</head>
+
+<body>
+
+  <div id="leftside">
+    <div>
+      <h1 id="line1">Anuj Namdeo</h1>
+      <h2 id="line2">Web Developer and UI Designer :/</h2>
+    </div>
+    <div>
+      <p id="para">Hi. I am Anuj, a full stack Web Developer. Passionate about web designing and Poetry. I like to
+        sleep, binge-watch, and to code *sometimes :/ Feel free to reach me on LinkedIn or Drop an e-mail at:
+      <div style="display: flex;">
+        <p id="emailatline">namdeoanuj15052001@gmail.com</p>
+        <p id="phoneatline">+91 9294605784</p>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div style="max-width: fit-content; display: flex; align-items: center;" onclick="toggleTheme()">
+      <img id="darkmodeimage" class="socialicons" src="images/dark.png" alt="">
+      <b> <p id="whatmode"> Dark mode  </p></b>
+    </div>
+    <!-- Dark -->
+
+    <!-- <p class="head" style="font-family: 'Alata', sans-serif; font-size: 12px;"><b> 01------- P R O J E C T S</b></p>
+    <br>
+    <p class="head" style="font-family: 'Alata', sans-serif; font-size: 12px;"><b>02------ C O N T A C T S</b></p> -->
+    <br>
+    <br>
+    <div id="bottomprofile">
+      <img id="profilepic" src="images/anuj5-modified.png" alt="">
+      <a target="blank" href="https://www.linkedin.com/in/anujnamdeo/"><img class="socialicons"
+          src="images/linkedin.png" alt="" id="linkedin"></a>
+      <a target="blank" href="https://github.com/anujnamdeo"><img class="socialicons" src="images/github.png" alt=""
+          id="github"></a>
+      <a target="blank" href="https://www.instagram.com/anujnamdeo/"><img class="socialicons" src="images/instagram.png"
+          alt="" id="instagram"></a>
+    </div>
+  </div>
+  <div id="rightside">
+    <div class="rightcardsproject">
+      <h2 class="rightcardsheadings">Projects</h2>
+      <a class="iconslinks" href="https://github.com/anujnamdeo/Cryptography-Chat-Website" target="blank">
+        <div class="projects" id="project1">
+          <p class="techstack"> HTML-5, CSS-3, JS-ES6, jQuery, PHP, MySQL, AJAX.</p>
+          <p class="projectname">LetsChat - A Cryptographic chatting website</p>
+          <p class="projectdesc">Used RSA Asymmetric algorithm of Cryptography to encrypt messages end-to-end.</p>
+          <button class="projectshare">SHARE</button>
+        </div>
+      </a>
+
+      <a class="iconslinks" href="#" target="blank">
+        <div class="projects" id="project1">
+          <p class="techstack"> ReactJS </p>
+          <p class="projectname">Under Development :/</p>
+          <p class="projectdesc">Psuedo description..</p>
+          <button class="projectshare">SHARE</button>
+        </div>
+      </a>
+
+      <a class="iconslinks" href="#" target="blank">
+        <div class="projects" id="project1">
+          <p class="techstack"> Machine Learning </p>
+          <p class="projectname">Under Development :/</p>
+          <p class="projectdesc">Psuedo description..</p>
+          <button class="projectshare">SHARE</button>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="rightcardsicons">
+      <h2 class="rightcardsheadings">Career</h2>
+
+      <a class="iconslinks" target="blank" href="Resume.pdf">
+        <div class="icons" id="icon1">
+          <div class="icon">
+            <img id="resumeimage" class="iconimage" src="images/person2.png" alt="">
+          </div>
+          <div class="icondetails">
+            <p class="iconheading">Resumé </p>
+            <p class="iconabout">Find my profile here. </p>
+            <p class="icondate"> Last Updated: 18 March, 2022</p>
+          </div>
+        </div>
+      </a>
+
+
+
+      <script>
+        var mode = 0;//0 for light, 1 for dark
+        function toggleTheme() {
+          localStorage.setItem('mode', 0);
+          var element = document.body;
+          element.classList.toggle("dark-mode1");
+
+          var theme = document.getElementsByTagName('link')[0];
+
+          var a = document.getElementById("darkmodeimage");
+          var c = document.getElementById("whatmode");
+
+          document.getElementById('linkedin').src = 'images/github.png';
+
+          var b = localStorage.getItem('mode');
+          //Method 1
+          if (theme.getAttribute('href') == 'style.css' && b == 0) {
+            theme.setAttribute('href', 'styledark.css');
+            // a.innerHTML ="Light";
+            c.innerHTML = "Light mode"
+            mode = 1;
+            localStorage.setItem('mode', 1);
+            document.getElementById('darkmodeimage').src = 'images/light.png';
+            document.getElementById('linkedin').src = 'images/linkedin2.png';
+            document.getElementById('github').src = 'images/github2.png';
+            document.getElementById('instagram').src = 'images/insta2.png';
+            document.getElementById('resumeimage').src = 'images/darkperson.png';
+            console.log(mode);
+          } else {
+            theme.setAttribute('href', 'style.css');
+            // a.innerHTML = "Dark";
+            c.innerHTML = "Dark mode"
+            mode = 0;
+            localStorage.setItem('mode', 1);
+            document.getElementById('darkmodeimage').src = 'images/dark.png';
+            document.getElementById('linkedin').src = 'images/linkedin.png';
+            document.getElementById('github').src = 'images/github.png';
+            document.getElementById('instagram').src = 'images/instagram.png';
+            document.getElementById('resumeimage').src = 'images/person2.png';
+            console.log(mode);
+          }
+
+
+          //Method 2
+          // mode=1;
+          // if(mode==0)
+          // {
+          //     mode=1;
+          //     theme.setAttribute('href', 'style.css');
+          // }
+          // else
+          // {
+          //     mode=0;
+          //     theme.setAttribute('href', 'styledark.css');
+          // }
+        }
+      </script>
+
+</body>
+
+</html>
